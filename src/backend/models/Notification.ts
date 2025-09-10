@@ -1,17 +1,28 @@
-//todo import
-
-//todo define interface (type)
-//export interface INotification extends Document {
-
-//todo define schema, similar to:
-/*Notification
-{
-    id: int;
-    sender: ForeignKey to user;
-    receiver: ForeignKey to user;
-    type: string; // or preferable ForeignKey to another table, in which you store possible types (see normalization of database)
+import {Schema, model, Types} from "mongoose"
+//interface for types
+export interface INotification extends Document {
+    userId: Types.ObjectId; 
+    title: string; 
     content: string;
-    is_read: boolean;
-    created_at: Date;
-} */
-//const notificationSchema = new Schema<INotification>({
+    type:string;
+    isRead: Boolean;
+    createdAt: Date;
+    updatedAt: Date;
+}
+
+//mongo schema
+
+const notificationSchema = new Schema<INotification>({
+    userId: {type: Schema.Types.ObjectId, ref: "User", required: true},
+    title: String,
+    content: String,
+    type: String,
+    isRead: {type: Boolean, default: false},
+
+},
+{timestamps:true}
+);
+
+export const Notification = model<INotification>("Notification",notificationSchema)
+
+

@@ -10,5 +10,7 @@ app.get('/', (req, res) => {
 
 // todo manual trigger endpoint??
 
+//todo db connecction script
+
 
 app.listen(3000, () => console.log('Server running on port 3000'));
