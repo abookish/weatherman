@@ -1,5 +1,5 @@
 import nodemailer from 'nodemailer'
-import { env } from './env.js'
+import { env } from '../config/env.js'
 
 const senderEmail = env.SENDER_EMAIL
 const emailAppPass = env.EMAIL_APP_PASS
