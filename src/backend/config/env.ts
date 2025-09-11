@@ -10,6 +10,12 @@ const envSchema = z.object({
   EMAIL_APP_PASS: z.string(),
   USER_TEST_NUMBER: z.string(),
   USER_TEST_NAME: z.string(),
+  MONGODB_USERNAME:z.string(),
+  MONGODB_PASSWORD:z.string(),
+  MONGODB_CLUSTER:z.string(),
+  MONGODB_NAME: z.string()
+
+
 });
 
 export const env = envSchema.parse(process.env);
