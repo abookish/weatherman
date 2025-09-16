@@ -7,7 +7,7 @@ const CONNECTION_EXIT_CODE = 1
 export async function connectToMongoDatabase(){ //TODO test
 try {
     await mongoose.connect(connectionURI)
-    console.log(`connected to ${env.MONGODB_NAME}`)
+    console.log(`Connected to ${env.MONGODB_NAME}`)
 } catch(error){
     console.error(`Connection Error: ${error}`)
     process.exit(CONNECTION_EXIT_CODE)
