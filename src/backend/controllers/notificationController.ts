@@ -3,6 +3,7 @@ import { Notification } from "../models/Notification.js";
 import type { Request, Response } from "express";
 
 //create function
+//todo move this logic to service layer
 export async function createNotification(req:Request, res:Response):Promise<Response>{
     try {
     const notification = await Notification.create(req)
@@ -15,3 +16,7 @@ export async function createNotification(req:Request, res:Response):Promise<Resp
 }
 
 //todo getter function
+//mostly for retries i think
+
+
+
