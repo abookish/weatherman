@@ -15,7 +15,6 @@ const LocationSchema = new Schema<UserLocation>({
 })
 
 export interface IUser extends Document {
-    //todo types
     username?:string; 
     email?:string;
     userLocation: UserLocation;
