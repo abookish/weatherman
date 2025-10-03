@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588834259193",
+    "project_id": "weatherman-4288e",
+    "storage_bucket": "weatherman-4288e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588834259193:android:0a74956a35dd34a7f12228",
+        "android_client_info": {
+          "package_name": "com.abookish.goodweather"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrmLrOFz4z4P_PcssWpNz7zX-oMRi1V9Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

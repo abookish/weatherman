@@ -1,14 +1,14 @@
 /*import { Admin } from "mongodb"
-import admin from "../config/firebase.js"
+import {firebaseAdmin} from "../config/firebase.js" //todo
 
 export async function sendPushNotification(deviceToken: string, title:string, body:string, notificationId: Number): Promise<{ success: boolean; error?: any }> {
     try {
-        await admin.messaging.send(
+        await firebaseAdmin.messaging.send( //todo
               deviceToken, {
                 notification: title, body
               }
         )
-        //todo update notificationStatus
+        //todo update notificationStatus in db
         return {success: true}
     } catch(error){
         //todo update notificationStatus

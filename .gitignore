@@ -3,3 +3,4 @@ dist/
 .env
 *.tsbuildinfo
 weatherman-4288e-firebase-adminsdk-fbsvc-7e5c0ecde1.json
+firebaseConfig.json

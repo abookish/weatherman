@@ -11,7 +11,9 @@ import { Text, View, Button, Platform } from 'react-native';
 import * as Device from 'expo-device';
 import * as Notifications from 'expo-notifications';
 import Constants from 'expo-constants';
-console.log("APP.tsx time")
+
+
+console.log("layout.tsx time")
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
     shouldPlaySound: true,
@@ -62,6 +64,7 @@ async function registerForPushNotificationsAsync() {
     const { status: existingStatus } = await Notifications.getPermissionsAsync();
     let finalStatus = existingStatus;
     if (existingStatus !== 'granted') {
+      console.log("not granted")
       const { status } = await Notifications.requestPermissionsAsync();
       finalStatus = status;
     }

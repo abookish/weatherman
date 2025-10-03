@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "weatherman",
+    "name": "goodweather",
     "slug": "weatherman",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "weatherman",
+    "scheme": "goodweather",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -20,7 +20,8 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.abookish.weatherman"
+      "package": "com.abookish.goodweather",
+      "googleServicesFile": "./google-services.json"
     },
     "web": {
       "output": "static",
